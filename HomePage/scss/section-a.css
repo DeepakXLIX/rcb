@@ -1,0 +1,50 @@
+#section-a {
+  padding-top: 20px;
+  position: relative;
+}
+#section-a .inside-section-a {
+  padding-left: 10px;
+  padding-top: 10px;
+  z-index: 2;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.41);
+  color: white;
+  height: 40%;
+  width: 45%;
+  bottom: 10px;
+  left: 10px;
+  border-radius: 10px;
+  font-size: clamp(10px, 3vw, 32px);
+}
+#section-a .inside-section-a p {
+  margin: 0px;
+  font-size: 0.4em;
+}
+#section-a .inside-section-a h5 {
+  font-size: 0.6em;
+  margin-bottom: 2px;
+}
+#section-a .inside-section-a button {
+  padding: 2px 8px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.5em;
+  background-image: linear-gradient(180deg, #B0964C 0%, #E9E1A8 47.92%, #B0964C 100%);
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1134px) {
+  #section-a .inside-section-a {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 992px) {
+  #section-a .inside-section-a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #section-a .inside-section-a {
+    font-size: clamp(12px, 3vw, 20px);
+  }
+}/*# sourceMappingURL=section-a.css.map */

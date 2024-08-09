@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- side-nav -->
+    <div id="side-nav">
+        <div class="inside-side-nav">
+            <img src="./img/RCB-Logo 1.png" alt="">
+            <ul>
+                <a href="../Home Page/index.html">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.75 18H5.25C2.9023 18 1 16.0977 1 13.75V5.25C1 2.90315 2.9023 1 5.25 1H13.75C16.0977 1 18 2.90315 18 5.25V13.75C18 16.2133 15.9813 18 13.75 18Z"
+                                stroke="black" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M9.49995 8.37933V14.1517" stroke="red" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M5.5771 10.0046V14.1518" stroke="red" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M13.4228 5.35291V14.1521" stroke="red" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <p>Home</p>
+
+                    </li>
+                </a>
+                <a href="../9ProfilePage/index.html">
+
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.75 18H5.25C2.9023 18 1 16.0977 1 13.75V5.25C1 2.90315 2.9023 1 5.25 1H13.75C16.0977 1 18 2.90315 18 5.25V13.75C18 16.0977 16.0977 18 13.75 18Z"
+                                stroke="#0A1C2A" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M4.38184 12.4397C5.32959 10.5204 6.40994 9.7537 7.35174 9.4698C8.98289 8.97765 10.0836 9.96705 11.7105 9.4698C13.096 9.04565 14.0089 7.8038 14.6192 6.5611"
+                                stroke="#E02834" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <p>Marketplace</p>
+                    </li>
+                </a>
+                <a href="../8PackDetail/index.html">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.8623 15.7167L10.7622 17.7558C9.9522 18.0805 9.04695 18.0805 8.2369 17.7558L3.1369 15.7167C1.8466 15.2007 1 13.9504 1 12.5598V6.43979C1 5.04919 1.8466 3.79884 3.1369 3.28289L8.2369 1.24289C9.04695 0.919037 9.9522 0.919037 10.7622 1.24289L15.8623 3.28289C17.1534 3.79884 18 5.04919 18 6.43979V12.5598C18 13.9504 17.1534 15.2007 15.8623 15.7167Z"
+                                stroke="#0A1C2A" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M9.49963 14.562V9.93548C9.49963 8.76078 10.2145 7.70508 11.305 7.26818L14.9753 5.80023L10.5664 7.56398C9.88128 7.83768 9.11798 7.83768 8.43288 7.56398L4.02393 5.80023"
+                                stroke="#E02834" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>Packs </p>
+                    </li>
+                </a>
+                <a href="../MyPacks/index.html">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.0952 3.20332C15.4326 0.744252 12.1804 0.3439 9.99933 2.00056C9.70693 2.22411 9.29298 2.22411 9.00058 2.00056C6.81946 0.3439 3.56735 0.744252 1.90474 3.20332C0.605928 5.12433 0.758928 7.66074 2.02204 9.60555C3.6651 12.1386 6.78121 16.3002 9.49953 16.3002C12.2195 16.3002 15.3348 12.1386 16.9787 9.60555C18.241 7.66074 18.394 5.12433 17.0952 3.20332Z"
+                                stroke="#0A1C2A" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M17.0952 3.20332C15.4326 0.744252 12.1804 0.3439 9.99933 2.00056C9.70693 2.22411 9.29298 2.22411 9.00058 2.00056C6.81946 0.3439 3.56735 0.744252 1.90474 3.20332C0.605928 5.12433 0.758928 7.66074 2.02204 9.60555"
+                                stroke="#E02834" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <p>Community </p>
+
+                    </li>
+                </a>
+                <a href="../MyWallet/index.html">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                            <path
+                                d="M1.00008 8.5499C0.990729 7.01736 1.81353 5.53327 3.26107 4.76572L9.43629 1.49494C11.5103 0.39674 14.0832 1.18724 15.1814 3.26123L15.8198 4.46652C15.9082 4.63312 15.9838 4.80227 16.0476 4.97397"
+                                stroke="#0A1C2A" stroke-width="1.5" stroke-linecap="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.7499 16.3082H5.24998C2.90229 16.3082 1 14.4051 1 12.0583V8.55033C1 6.20265 2.90229 4.30035 5.24998 4.30035H13.7499C16.0968 4.30035 17.9999 6.20265 17.9999 8.55033V12.0583C17.9999 14.4051 16.0968 16.3082 13.7499 16.3082Z"
+                                stroke="#0A1C2A" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M11.8118 10.3039H7.18872" stroke="#E02834" stroke-width="1.5"
+                                stroke-linecap="round" />
+                        </svg>
+                        <p>Wallet</p>
+                    </li>
+                </a>
+                <a href="../9ProfilePage/index.html">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1 16.2968V5.25007C1 2.90233 2.90233 1 5.25007 1H10.3502C12.6979 1 14.6002 2.90233 14.6002 5.25007V16.2968C14.6002 17.6977 13.0005 18.4975 11.8802 17.6569L9.33013 15.7443C8.42317 15.0643 7.13285 15.1085 6.22588 15.7877L3.72004 17.6569C2.59973 18.4975 1 17.6977 1 16.2968Z"
+                                stroke="#0A1C2A" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M5.48828 6.95H10.1115" stroke="#E02834" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <p>My Active Bids</p>
+                    </li>
+                </a>
+                <a href="../MyWallet/index.html">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12.4879 2.84195C11.6625 1.85085 10.6264 1 9.50014 1C8.37474 1 7.33859 1.85085 6.51324 2.84195C5.24079 4.3694 5.36149 6.62275 6.76824 8.0295C8.27699 9.53825 10.7241 9.53825 12.2329 8.0295C13.6388 6.62275 13.7612 4.3694 12.4879 2.84195Z"
+                                stroke="#030835" stroke-width="1.5" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.8475 18H15.1542C16.7258 18 18 16.725 18 15.1525C18 13.5809 16.7258 12.3067 15.1542 12.3067H3.8475C2.275 12.3067 1 13.5809 1 15.1525C1 16.725 2.275 18 3.8475 18Z"
+                                stroke="#0A1C2A" stroke-width="1.5" />
+                            <path d="M6.51294 2.84195C5.24049 4.3694 5.36204 6.62275 6.76794 8.0295" stroke="#E02834"
+                                stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M3.84741 18H15.1541C16.7258 18 17.9999 16.725 17.9999 15.1525C17.9999 13.5809 16.7258 12.3067 15.1541 12.3067"
+                                stroke="#E02834" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <p>My Portfolio </p>
+                    </li>
+                </a>
+                <a href="../Help Center/">
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.01383 10.7141L1.84278 7.44241C0.719073 6.84656 0.719073 5.23664 1.84278 4.63994L8.01383 1.36912C8.94373 0.876962 10.0555 0.876962 10.9854 1.36912L17.1565 4.63994C18.2811 5.23664 18.2811 6.84656 17.1565 7.44241L10.9412 10.7574C10.013 11.2504 8.94373 11.2062 8.01383 10.7141Z"
+                                stroke="#0A1C2A" stroke-width="1.5" stroke-linecap="round" />
+                            <path
+                                d="M17.1565 11.5566C18.2811 12.1525 18.2811 13.7641 17.1565 14.3599L10.9854 17.6308C10.0555 18.1229 8.94373 18.1229 8.01383 17.6308L1.84278 14.3599C0.719073 13.7641 0.719073 12.1525 1.84278 11.5566"
+                                stroke="#E02834" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <p>Help Center
+                        </p>
+                    </li>
+                </a>
+            </ul>
+
+            <div id="user-profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 41 41" fill="none">
+                    <circle cx="20.5" cy="20.5" r="20.5" fill="#E02834" />
+                    <mask id="mask0_694_469" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="41" height="41">
+                        <circle cx="20.5" cy="20.5" r="20.5" fill="white" />
+                    </mask>
+                    <g mask="url(#mask0_694_469)">
+                    </g>
+                </svg>
+                <div>
+                    <p>User Name</p>
+                    <p>Wallet Remaining</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col">
+                <!-- upper-nav -->
+                <div id="upper-nav">
+                    <nav>
+                        <div class="container-fluid">
+                            <div class="row ">
+                                <!-- nav collapse button 1-->
+                                <div class=" common-cls col-4">
+                                    <button onclick="button_fun()" class="rounded-1 border-1" id="nav-menu-btn"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- input 2-->
+                                <div class=" common-cls col-12 col-md-auto">
+                                    <div class="input-div1">
+                                        <input type="text" placeholder="Search Packs"
+                                            class="border border-1 rounded-2 ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                                            viewBox="0 0 23 21" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M20.0155 10.009C20.0155 14.985 15.7279 19.018 10.4391 19.018C5.15142 19.018 0.862793 14.985 0.862793 10.009C0.862793 5.033 5.15142 1 10.4391 1C15.7279 1 20.0155 5.033 20.0155 10.009Z"
+                                                stroke="#231E20" stroke-width="1.5" stroke-linecap="round" />
+                                            <path d="M21.3213 20.2468L19.2073 18.2578" stroke="#E02834"
+                                                stroke-width="1.5" stroke-linecap="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <!-- svg button 3-->
+                                <div class=" common-cls col-auto col-md-auto "> <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="35" height="35" viewBox="0 0 44 44" fill="none">
+                                        <circle cx="22" cy="22" r="22" fill="#FAFBFC"></circle>
+                                        <path d="M23.9011 30.0078H21.0987" stroke="#E02834" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M22.5 17.5566V20.3591" stroke="#E02834" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M31 25.7478V25.7478C31 26.8707 30.0896 27.781 28.9668 27.781H16.0332C14.9104 27.781 14 26.8707 14 25.7478C14 25.0967 14.3111 24.4864 14.8372 24.1031C15.7799 23.418 16.3375 22.3232 16.3375 21.1578V19.389C16.3375 16.1156 18.7923 13.2435 22.0571 13.0157C23.9322 12.8839 25.6416 13.5911 26.8605 14.81C27.974 15.9227 28.6625 17.462 28.6625 19.162V21.1578C28.6625 22.3232 29.2201 23.418 30.1628 24.1031C30.6889 24.4864 31 25.0967 31 25.7478Z"
+                                            stroke="#141414" stroke-width="1.5" stroke-linecap="round"></path>
+                                        <circle cx="39" cy="8" r="5" fill="#F63D13"></circle>
+                                    </svg>
+                                </div>
+                                <!-- btn1  4-->
+                                <div class=" common-cls  col-4 col-md-auto">
+                                    <img src="./img/upper-nav-img/Services.png"
+                                        class=" border border-white bg-white rounded-pill" height="35" width="35">
+                                </div>
+                                <!-- royal stag img 5-->
+                                <div class=" common-cls col-4 col-md-auto ">
+                                    <img src="./img/RCB-Logo 1.png" class="nav-logo" height="80px" width="80px">
+                                </div>
+
+
+                                <div class=" common-cls col  ">
+                                    <a href="../LoginPage/index.html">
+                                        <button class=" rounded-4 ">
+                                            Log In
+                                        </button>
+                                    </a>
+                                    <button class=" rounded-4 ">
+                                        <a href="../LoginPage/register.html">Sign Up</a>
+                                    </button>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                    </nav>
+                </div>
+                <!-- main section -->
+                <section id="mainContent">
+                    <div id="partition">
+                        <h4 class="text-light">My Wallet</h4>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xl-8 ">
+                                    <div id="partition1">
+                                        <div class="amount">
+                                            <div class="wrapper">
+                                                <p>Current Balance</p>
+                                                <h1>$1523.00 AUD</h1>
+                                            </div>
+                                        </div>
+                                        <p>Latest transactions</p>
+                                        <div class="dataSheet">
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                            aria-expanded="false" aria-controls="collapseOne">
+                                                            <div class="to_show">
+                                                                <p class="direct-p">Today</p>
+                                                                <p class="direct-p">Set Purchase</p>
+                                                                <p class="direct-p">Card payment</p>
+                                                                <div class="active-green">
+                                                                    <div class="dot"></div>
+                                                                    <p>Success</p>
+                                                                </div>
+                                                                <p class="direct-p text-danger">- 15,00 $</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse "
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the first item's accordion body.</strong> It
+                                                            is shown by
+                                                            default, until the collapse plugin adds the appropriate
+                                                            classes that we
+                                                            use to style each element. These classes control the overall
+                                                            appearance,
+                                                            as well as the showing and hiding via CSS transitions. You
+                                                            can modify
+                                                            any of this with custom CSS or overriding our default
+                                                            variables. It's
+                                                            also worth noting that just about any HTML can go within the
+                                                            <code>.accordion-body</code>, though the transition does
+                                                            limit overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                            aria-expanded="false" aria-controls="collapseTwo">
+                                                            <div class="to_show">
+                                                                <p class="direct-p">20/05</p>
+                                                                <p class="direct-p">Set Purchase</p>
+                                                                <p class="direct-p">Card payment</p>
+                                                                <div class="active-green">
+                                                                    <div class="dot"></div>
+                                                                    <p>Success</p>
+                                                                </div>
+                                                                <p class="direct-p text-danger">- 8,00 $</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the second item's accordion body.</strong>
+                                                            It is hidden
+                                                            by default, until the collapse plugin adds the appropriate
+                                                            classes that
+                                                            we use to style each element. These classes control the
+                                                            overall
+                                                            appearance, as well as the showing and hiding via CSS
+                                                            transitions. You
+                                                            can modify any of this with custom CSS or overriding our
+                                                            default
+                                                            variables. It's also worth noting that just about any HTML
+                                                            can go within
+                                                            the <code>.accordion-body</code>, though the transition does
+                                                            limit
+                                                            overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                            aria-expanded="false" aria-controls="collapseThree">
+                                                            <div class="to_show">
+                                                                <p class="direct-p">18/05</p>
+                                                                <p class="direct-p">Crypto Top Up</p>
+                                                                <p class="direct-p">Transfer</p>
+                                                                <div class="active-green">
+                                                                    <div class="dot"></div>
+                                                                    <p>Success</p>
+                                                                </div>
+                                                                <p class="direct-p">+ 249,69 $</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the third item's accordion body.</strong> It
+                                                            is hidden
+                                                            by default, until the collapse plugin adds the appropriate
+                                                            classes that
+                                                            we use to style each element. These classes control the
+                                                            overall
+                                                            appearance, as well as the showing and hiding via CSS
+                                                            transitions. You
+                                                            can modify any of this with custom CSS or overriding our
+                                                            default
+                                                            variables. It's also worth noting that just about any HTML
+                                                            can go within
+                                                            the <code>.accordion-body</code>, though the transition does
+                                                            limit
+                                                            overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                            aria-expanded="false" aria-controls="collapseFour">
+                                                            <div class="to_show">
+                                                                <p class="direct-p">16/05</p>
+                                                                <p class="direct-p">Fiat Top Up</p>
+                                                                <p class="direct-p">Transfer</p>
+                                                                <div class="active-green">
+                                                                    <div class="dot"></div>
+                                                                    <p>Success</p>
+                                                                </div>
+                                                                <p class="direct-p">+ 1300,00 $</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the third item's accordion body.</strong> It
+                                                            is hidden
+                                                            by default, until the collapse plugin adds the appropriate
+                                                            classes that
+                                                            we use to style each element. These classes control the
+                                                            overall
+                                                            appearance, as well as the showing and hiding via CSS
+                                                            transitions. You
+                                                            can modify any of this with custom CSS or overriding our
+                                                            default
+                                                            variables. It's also worth noting that just about any HTML
+                                                            can go within
+                                                            the <code>.accordion-body</code>, though the transition does
+                                                            limit
+                                                            overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                            aria-expanded="false" aria-controls="collapseFive">
+                                                            <div class="to_show">
+                                                                <p class="direct-p">09/05</p>
+                                                                <p class="direct-p">Set Purchase (Crypto)</p>
+                                                                <p class="direct-p">Transfer</p>
+                                                                <div class="active-green">
+                                                                    <div class="dot"></div>
+                                                                    <p>Success</p>
+                                                                </div>
+                                                                <p class="direct-p text-danger">- 39,50 $</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the third item's accordion body.</strong> It
+                                                            is hidden
+                                                            by default, until the collapse plugin adds the appropriate
+                                                            classes that
+                                                            we use to style each element. These classes control the
+                                                            overall
+                                                            appearance, as well as the showing and hiding via CSS
+                                                            transitions. You
+                                                            can modify any of this with custom CSS or overriding our
+                                                            default
+                                                            variables. It's also worth noting that just about any HTML
+                                                            can go within
+                                                            the <code>.accordion-body</code>, though the transition does
+                                                            limit
+                                                            overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                                            aria-expanded="false" aria-controls="collapseSix">
+                                                            <div class="to_show">
+                                                                <p class="direct-p">19/06</p>
+                                                                <p class="direct-p">Set Purchase</p>
+                                                                <p class="direct-p">Transfer</p>
+                                                                <div class="active-green">
+                                                                    <div class="dot"></div>
+                                                                    <p>Success</p>
+                                                                </div>
+                                                                <p class="direct-p text-danger">- 15,00 $</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the third item's accordion body.</strong> It
+                                                            is hidden
+                                                            by default, until the collapse plugin adds the appropriate
+                                                            classes that
+                                                            we use to style each element. These classes control the
+                                                            overall
+                                                            appearance, as well as the showing and hiding via CSS
+                                                            transitions. You
+                                                            can modify any of this with custom CSS or overriding our
+                                                            default
+                                                            variables. It's also worth noting that just about any HTML
+                                                            can go within
+                                                            the <code>.accordion-body</code>, though the transition does
+                                                            limit
+                                                            overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button"
+                                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                                            aria-expanded="false" aria-controls="collapseSeven">
+                                                            <div class="to_show">
+                                                                <p class="direct-p">25/06</p>
+                                                                <p class="direct-p">Set Purchase</p>
+                                                                <p class="direct-p">Card payment</p>
+                                                                <div class="active-green">
+                                                                    <div class="dot"></div>
+                                                                    <p>Success</p>
+                                                                </div>
+                                                                <p class="direct-p">- 15,00 $</p>
+                                                            </div>
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseSeven" class="accordion-collapse collapse"
+                                                        data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <strong>This is the third item's accordion body.</strong> It
+                                                            is hidden
+                                                            by default, until the collapse plugin adds the appropriate
+                                                            classes that
+                                                            we use to style each element. These classes control the
+                                                            overall
+                                                            appearance, as well as the showing and hiding via CSS
+                                                            transitions. You
+                                                            can modify any of this with custom CSS or overriding our
+                                                            default
+                                                            variables. It's also worth noting that just about any HTML
+                                                            can go within
+                                                            the <code>.accordion-body</code>, though the transition does
+                                                            limit
+                                                            overflow.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-4 ">
+                                    <div id="partition2">
+                                        <h5>Add funds to your balance</h5>
+                                        <form action="amount">
+                                            <input class="rounded-2" type="text" name="amount"
+                                                placeholder="Enter Amount" id="">
+                                            <p>AUD</p>
+                                        </form>
+                                        <button class="btn btn1" type="submit">Add Funds</button>
+                                        <p>When you purchase Dapper Balance using fiat payment methods, the sale is made
+                                            by Circle
+                                            Internet Financial, Inc. When you purchase Dapper Balance using
+                                            cryptocurrency, the sale
+                                            is made by Dapper Labs, Inc.</p>
+                                        <div class="carousel">
+                                            <ul class="carousel__list">
+                                                <li class="carousel__item carousel__item_active" data-pos="5">5</li>
+                                                <li class="carousel__item" data-pos="4">4</li>
+                                                <li class="carousel__item" data-pos="3">3</li>
+                                                <li class="carousel__item" data-pos="2">2</li>
+                                                <li class="carousel__item" data-pos="1">1</li>
+                                            </ul>
+                                        </div>
+                                        <button class="btn btn2" type="submit">Connect</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- footer -->
+                <div id="footer">
+                    <div id="footer">
+                        <div class="container">
+                            <footer class="pt-3">
+                                <a href="#mainContent">
+                                    <img src="./img/Group 64.png" alt="">
+                                </a>
+                                <div class="row">
+                                    <div class="col-12  col-md-3 col-lg-3 mb-3">
+                                        <img src="./img/RCB-Logo 1.png" alt="">
+                                        <p id="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+                                            eaque
+                                            voluptatem
+                                            illum corrupti eligendi consequuntur eos beatae. distinctio ad delectus
+                                            reiciendis.
+                                            Eligendi
+                                            quo cum rerum sunt iusto eveniet.</p>
+
+                                    </div>
+
+                                    <div class="col-12  col-md-5 col-lg-4 mb-3">
+                                        <div class="row">
+                                            <div class="col-12"></div>
+                                            <h6>LINKS</h6>
+                                            <div class="col-12 col-md-6">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">About
+                                                            Us</a>
+                                                    </li>
+                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Contact
+                                                            Us</a>
+                                                    </li>
+                                                    <li class="nav-item mb-2"><a href="#"
+                                                            class="nav-link p-0 ">Collection</a>
+                                                    </li>
+
+                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Help
+                                                            &
+                                                            Support</a>
+                                                    </li>
+                                                    <li class="nav-item mb-2"><a href="#"
+                                                            class="nav-link p-0 ">Pricing</a>
+                                                    </li>
+                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a>
+                                                    </li>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul class="nav flex-column">
+
+                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Help
+                                                            &
+                                                            Support</a>
+                                                    </li>
+                                                    <li class="nav-item mb-2"><a href="#"
+                                                            class="nav-link p-0 ">Pricing</a>
+                                                    </li>
+                                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">FAQs</a>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class=" col-12  col-md-4 offset-lg-1 ">
+                                        <form>
+                                            <h6>DON’T MISS A THING!</h6>
+                                            <p>Subscribe us now to get the latest news and update</p>
+                                            <div class="d-flex flex-column flex-sm-row w-80 gap-2">
+                                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                                <input id="newsletter1" type="text" class="form-control rounded-0"
+                                                    placeholder="Email address">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                                                </svg>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer-end -->
+                <div id="footer-end">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col child1 ">©️ 2024 NFT.All Rights Reserved.</div>
+                            <div class="col child2   ">
+                                <img src="./logos/Facebook.png" alt="">
+                                <img src="./logos/Instagram.png" alt="">
+                                <img src="./logos/twitch-brands.png" alt="">
+                                <img src="./logos/twitter-brands.png" alt="">
+                                <img src="./logos/youtube-brands.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        let var1 = document.querySelector("#side-nav ");
+
+        function button_fun() {
+            console.log(var1);
+            var1.classList.toggle('toggle-nav-btn');
+        }
+
+
+    </script>
+</body>
+
+</html>

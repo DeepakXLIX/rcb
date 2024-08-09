@@ -1,0 +1,121 @@
+@import 'media';
+
+.alone-h1 {
+    color: white;
+    padding: 10px 0px 25px 10px;
+    margin: 0px 10px;
+    font-weight: 700;
+
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    
+    @include media(768px) {
+        justify-content: center;
+    }
+
+    .line {
+        background-color: white;
+        height: 2px;
+        width: 100%;
+        border-radius: 10px;
+        position: absolute;
+        top: 40%;
+        display: none;
+
+        @include media(768px) {
+            display: block;
+        }
+
+    }
+
+    .alone-h1-2 {
+        background-color: #1B1B1B;
+        display: inline;
+        z-index: 1;
+
+        @include media(768px) {
+            text-align: center;
+            font-size: 1.6em;
+        }
+
+
+    }
+}
+
+#myCard {
+    color: white;
+
+
+    @include media(1200px) {
+        font-size: 14px;
+    }
+
+    @include media(768px) {
+        font-size: 16px;
+    }
+
+    .con {
+        padding: 40px 0px 200px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 30px;
+
+        @include media(768px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+
+
+        .grid-item {
+            background-color: #111111;
+            border-radius: 12px;
+            padding: 30px 40px;
+
+            @include media(1200px) {
+                padding: 20px;
+            }
+
+
+            h4 {
+                display: flex;
+                align-items: center;
+                padding-bottom: 10px;
+                font-size: 1.8em;
+
+                @include media(1200px) {
+                    font-size: 1.5em;
+                }
+
+                .circle {
+                    display: inline-block;
+                    margin-right: 10px;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 10px;
+                    background-color: #E02834;
+                }
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            h6 {
+                font-size: 1em;
+                font-weight: 600;
+
+                @include media(768px) {
+                    text-align: right;
+                    padding-top: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

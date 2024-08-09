@@ -1,0 +1,123 @@
+#mail-sec {
+    padding: 2% 0%;
+    color: white;
+
+    .inside-mail-sec {
+        background-image: url('../img/Container.png');
+        background-position: center center;
+        background-size: cover;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0px;
+
+        h3 {
+            display: inline;
+            font-weight: 700;
+        }
+
+        p {
+            width: 70%;
+            font-size: 12px;
+        }
+
+        form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            input {
+                border: 0.5px solid #83878D;
+                background: linear-gradient(0deg, #363636, #363636),
+                    linear-gradient(0deg, #83878D, #83878D);
+                padding: 2%;
+                font-size: 10px;
+                letter-spacing: 1px;
+                width: 30vw;
+
+                &::placeholder {
+                    color: white;
+                }
+            }
+
+            button {
+                background: linear-gradient(180deg, #B0964C 0%, #E9E1A8 47.92%, #B0964C 100%);
+           
+                padding: 2% 3%;
+                font-size: 10px;
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+    #mail-sec {
+
+        .inside-mail-sec {
+            text-align: center;
+            padding: 20px 0px;
+         
+            h3 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 8px;
+                text-align: center;
+
+            }
+
+            input {
+
+                letter-spacing: 1px !important;
+                width: 50vw !important;
+
+                &::placeholder {
+                    font-size: 8px;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width:992px)
+{
+
+    #mail-sec {
+
+        .inside-mail-sec {
+            text-align: center;
+            padding: 20px 0px;
+
+            h3 {
+                font-size: 14px;
+            }
+
+            p {
+                font-size: 10px;
+                text-align: justify;
+            }
+
+            input {
+
+                letter-spacing: 1px !important;
+                width: 30vw ;
+
+            }
+        }
+
+    }
+}

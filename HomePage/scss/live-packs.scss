@@ -1,0 +1,308 @@
+#live-packs {
+    padding: 2% 0%;
+    color: white;
+
+    background-image: url('../img/Rectangle\ 79.png');
+    background-position: center center;
+    background-size: cover;
+
+
+    .container-fluid {
+        .row {
+            border: 1px solid transparent;
+            border-radius: 20px;
+            overflow: hidden;
+
+
+        }
+
+        .common-cls:first-child {
+            padding-top: 60px;
+            padding-left: 10%;
+            font-size: 20px;
+
+
+            h2 {
+
+                font-size: 0.8em;
+                font-weight: 800;
+                border-bottom: 2px solid red;
+                letter-spacing: 4px;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+
+            ul {
+                list-style-type: none;
+                padding-left: 0px;
+
+                li {
+                    font-size: 0.7em;
+                    padding-bottom: 4px;
+
+                    img {
+                        height: 15px;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+
+        .common-cls:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px 0px;
+            color: white;
+            font-size: 25px;
+
+
+
+            .wrapper-owl {
+                transform: rotate(90deg);
+                // border: 1px solid blue;
+                max-width: 200px;
+                max-height: 200px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .item {
+                    height: 200px;
+                    width: 198px;
+                    box-sizing: border-box;
+                    transform: rotate(-90deg);
+                    // background-color: aqua;
+                }
+            }
+
+
+
+
+
+
+            h2 {
+                font-size: 1em;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+
+            p {
+                width: 60%;
+                font-size: 0.5em;
+                text-align: center;
+                color: #A4A4A4;
+
+            }
+
+            button {
+                background-image: linear-gradient(180deg, #B0964C 0%, #E9E1A8 48.96%, #B0964C 100%);
+                font-weight: 600;
+                font-size: 0.5em;
+            }
+
+
+        }
+
+        .common-cls:nth-child(3) {
+            padding: 0px;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 20px;
+
+            .inside-div {
+                padding: 0;
+                display: flex;
+                justify-self: flex-start;
+                width: 100%;
+
+                .wrapper-owl {
+                    transform: rotate(90deg);
+                    // border: 1px solid blue;
+                    height: 100px;
+                    max-width: 80px;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .item {
+                    height: 100px;
+                    max-width: 80px;
+                    box-sizing: border-box;
+                    transform: rotate(-90deg);
+
+                    // background-color: aqua;
+                    img {
+                        flex: 1;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        height: 100px;
+                        max-width: 80px;
+                    }
+                }
+
+
+
+
+
+                .img-sib {
+                    flex: 1;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    p {
+                        text-align: left !important;
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:980px) {
+    #live-packs {
+        .container-fluid {
+            .row {
+                div:first-child {
+                    font-size: 16px;
+                }
+
+                div:nth-child(2) {
+                    font-size: 20px;
+
+                    img {
+                        max-height: 100%;
+
+                    }
+
+                    button {
+                        padding: 6px 14px !important;
+                    }
+                }
+
+                div:nth-child(3) {
+
+
+                    .inside-div {
+
+
+                        .img-sib {
+                            h6 {
+                                font-size: 10px;
+                            }
+
+                            p {
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:560px) {
+    #live-packs {
+        .container-fluid {
+            .row {
+                div:first-child {
+
+                    font-size: 12px;
+                    padding-left: 0%;
+
+                    h2 {
+                        letter-spacing: 0px !important;
+                    }
+
+                    ul {
+                        li {
+                            img {
+                                height: 5px;
+                            }
+                        }
+                    }
+
+                }
+
+                div:nth-child(2) {
+                    font-size: 18px;
+
+                    img {
+                        max-width: 30vh;
+                    }
+
+                    button {
+                        padding: 6px 14px !important;
+                    }
+                }
+
+                div:nth-child(3) {
+
+
+                    .inside-div {
+
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+
+                      
+                        .img-sib {
+                            h6 {
+                                br {
+                                    display: none;
+                                }
+                            }
+
+                            p {
+                                text-indent: 10px;
+                            }
+
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    #live-packs {
+        p {
+            text-indent: 0px !important;
+            font-size: 6px;
+        }
+    }
+
+}

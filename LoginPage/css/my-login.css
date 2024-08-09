@@ -1,0 +1,98 @@
+html,
+body {
+	height: 100%;
+	background-color: #141414d5 ;
+}
+
+body.my-login-page {
+	font-size: 14px;
+}
+
+
+.my-login-page .card-wrapper {
+	width: 400px;
+}
+
+.my-login-page .card {
+	border-color: transparent;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, .05);
+	background-color: #141414;
+	color: white;
+
+}
+
+.my-login-page .card.fat {
+	padding: 10px;
+	margin-top: 30%;
+	border-top: 4px solid red;
+}
+
+.my-login-page .card .card-title {
+	margin-bottom: 30px;
+}
+
+.my-login-page .form-control {
+	border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+	width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+	padding: 5px 10px;
+	background: linear-gradient(180deg, #B0964C 0%, #E9E1A8 48.96%, #B0964C 100%);
+	color: black
+}
+
+.my-login-page .footer {
+	margin: 40px 0;
+	color: #888;
+	text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+	.my-login-page .card-wrapper {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.my-login-page .card.fat {
+		padding: 0;
+	}
+
+	.my-login-page .card.fat .card-body {
+		padding: 15px;
+	}
+}
+
+#or {
+	height: 1px;
+	background-color: white;
+	margin: 20px 0px;
+	position: relative;
+
+	&::after {
+		content: "Or";
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: -10px;
+		padding: 0px 30px;
+		background-color: #141414;
+	}
+}
+
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border: none;
+	outline: 0;
+	box-shadow: none;
+}
+
+.my-login-page .form-control {
+	border: none;
+}

@@ -1,0 +1,28 @@
+@import 'media';
+
+#item-tag {
+    padding-top: 20px;
+
+    nav {
+        div.nav {
+            button {
+                color: white;
+                padding: 10px 40px;
+                letter-spacing: 1px;
+                border-bottom: 4px solid transparent;
+
+                @include media(768px) {
+                    padding: 20px;
+                    font-size: 14px;
+                }
+
+                font-size: 21px;
+                font-weight: 600;
+
+                &.active {
+                    border-bottom: 4px solid red;
+                }
+            }
+        }
+    }
+}

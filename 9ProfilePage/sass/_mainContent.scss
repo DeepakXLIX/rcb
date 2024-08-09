@@ -1,0 +1,28 @@
+section#mainContent {
+    background-color: #1B1B1B;
+    padding: 0px 20px 0px 20px;
+
+
+    @media (min-width:768px) and (max-width:1800px) {
+        padding: 0px 100px 0px 250px;
+    }
+
+    @include media(1300px) {
+
+        padding: 0px px 0px 250px;
+    }
+
+    @include media(1200px) {
+
+        padding: 0px 20px 0px 250px;
+    }
+
+    @include media (768px) {
+        padding: 0px 20px;
+    }
+}
+
+body {
+    background-color: #1B1B1B;
+}
+

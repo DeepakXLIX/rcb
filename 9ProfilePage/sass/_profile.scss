@@ -1,0 +1,112 @@
+@import './_media.scss';
+
+#profile {
+    padding-top: 20px;
+
+    .container {
+        color: white;
+
+        .row {
+            .common-cls:first-child {
+                img {
+                    max-height: 220px;
+                    margin-top: -40px;
+
+
+                    @include media(1100px) {
+                        height: 160px;
+                        margin-top: auto;
+                    }
+
+                    @include media(992px) {
+                        height: 140px;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    @include media(768px) {
+                        margin-top: -120px;
+                        max-height: 180px;
+                        display: inline;
+                    }
+
+                }
+
+                @media screen {
+                    @include media(768px) {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .common-cls:nth-child(2) {
+
+                @include media(768px) {
+                    font-size: 20px;
+                }
+
+                h2 {
+                    font-size: 2em;
+
+                    @include media(768px) {
+                        text-align: center;
+                    }
+                }
+
+                .wrapper-1,
+                .wrapper-2 {
+                    font-size: 0.9em;
+                    display: flex;
+                    gap: 20px;
+                    font-weight: 500;
+
+                    @include media(768px) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                >p {
+                    font-size: 1em;
+                    opacity: 1;
+
+                    @include media(768px) {
+                        text-align: center;
+                    }
+                }
+
+                @include media(1280px) {
+                    font-size: 14px;
+                }
+
+                @include media(992px) {
+                    font-size: 12px;
+                }
+
+
+            }
+
+            .common-cls:last-child {
+                text-align: end;
+
+                button {
+                    padding: 10px 30px;
+                    font-weight: bold;
+                    background: linear-gradient(180deg, #B0964C 0%, #E9E1A8 47.4%, #B0964C 100%);
+
+                    @include media(1000px) {
+                        padding: 5px 10px;
+
+                    }
+                }
+
+                @include media(992px) {
+                    margin: 20px;
+                    text-align: center;
+                    margin-left: -4px;
+                }
+            }
+
+        }
+    }
+}

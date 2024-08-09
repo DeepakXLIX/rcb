@@ -1,0 +1,220 @@
+$footer-color: #0E0E0E;
+$similar-border: #0A101C;
+
+#footer {
+    border-top: 50px solid $similar-border;
+    border-top: 50px solid $similar-border;
+    background-color: $footer-color;
+}
+
+footer>a {
+    position: absolute;
+    left: 44%;
+    transform: translateY(-100%);
+    background-color: #E02834;
+    padding: 5px;
+
+}
+
+footer {
+    background-color: $footer-color;
+    color: white;
+    position: relative;
+
+    @media (max-width:1800px)  and (min-width:1400px) {
+        padding-left: 250px;
+        padding-right: 100px;
+
+    }
+
+    p {
+        opacity: 0.5;
+    }
+
+    .row {
+        div:first-child {
+
+            img {
+                height: 80px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 10px;
+                margin: 0;
+            }
+
+            ul {
+
+                li:nth-child(4),
+                li:nth-child(5),
+                li:nth-child(6) {
+                    display: none;
+                }
+            }
+
+        }
+
+        div:nth-child(2) {
+            letter-spacing: 0px;
+            font-weight: 800;
+
+            h6 {
+                font-weight: 800;
+            }
+
+            ul {
+                font-size: 14px;
+
+                li:first-child {
+                    padding-top: 20px;
+                }
+
+                li {
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    padding-bottom: 10px;
+
+                    a {
+                        color: white;
+                        opacity: 0.6;
+                        ;
+                    }
+                }
+            }
+
+        }
+
+        div:nth-child(3) {
+            position: relative;
+
+            h6 {
+                letter-spacing: 0px;
+                font-weight: 800;
+            }
+
+            p {
+                margin: 30px 0px;
+
+                font-size: 14px;
+
+            }
+
+            input {
+                background-color: #191D23;
+                border: none;
+
+                &::placeholder {
+                    color: white;
+                    width: 80%;
+                    opacity: 0.5;
+                    padding-left: 0px !important;
+                    font-size: 12px;
+                }
+            }
+
+            svg {
+                position: absolute;
+                right: 2%;
+                top: 30%;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+@media screen and (max-width:500px) {
+
+    #footer {
+        border-top: 20px solid $similar-border;
+    }
+
+    footer>a>img {
+        height: 28px;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+// media query
+@media screen and (max-width:768px) {
+
+    footer>a {
+        position: absolute;
+        left: 46%;
+        transform: translateY(-120%);
+        background-color: #E02834;
+        padding: 5px;
+    }
+
+    footer {
+
+        .row {
+            div:first-child {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                img {
+                    height: 60px;
+                }
+
+                p {
+                    font-size: 8px;
+                    width: 60vw;
+                    text-align: justify;
+                }
+            }
+
+            div:nth-child(2) {
+                h6 {
+                    display: none;
+                }
+
+                div:first-child {
+                    ul {
+                        display: flex;
+                        flex-direction: row !important;
+                        justify-content: space-evenly;
+
+                        li {
+                            font-size: 8px;
+                            display: inline;
+                        }
+
+                        li:first-child {
+                            padding-top: 0;
+                        }
+                    }
+
+                    div:last-child {
+                        ul {
+                            display: none;
+                        }
+                    }
+
+                }
+            }
+
+            div.offset-lg-1 {
+                display: none;
+            }
+
+        }
+
+
+
+    }
+}

@@ -1,0 +1,28 @@
+#brand-logo {
+  padding-left: 250px;
+  background-color: #0E0E0E;
+}
+#brand-logo .col-3 img {
+  height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  #brand-logo {
+    padding-left: 0px;
+  }
+  #brand-logo .col-3 {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  #brand-logo {
+    overflow: hidden;
+  }
+  #brand-logo .col-3 {
+    padding: 0;
+  }
+  #brand-logo .col-3 img {
+    height: 52px;
+  }
+}/*# sourceMappingURL=brand-logo.css.map */

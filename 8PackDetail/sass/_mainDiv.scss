@@ -1,0 +1,226 @@
+#mainDiv {
+    main {
+        .container {
+            .row {
+                .common-cls:first-child {
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    text-align: center;
+
+
+                    @include media(1100px) {
+                        justify-content: center;
+                        font-size: 14px;
+                    }
+
+                    @include media(992px) {
+                        font-size: 12px;
+                    }
+
+                    @include media(768px) {
+                        font-size: 16px;
+                    }
+
+                    @include media(768px) {
+                        justify-content: center;
+                    }
+
+
+                    section {
+                        >* {
+                            margin-bottom: 20px;
+                        }
+
+                        button {
+                            font-size: 0.8em;
+                        }
+
+                        h3 {
+
+                            font-size: 1.5em;
+                        }
+
+                        h6 {
+                            color: #AAAAAA;
+                            font-size: 0.8em;
+                        }
+
+                        .con {
+                            display: flex;
+                            gap: 5px;
+
+                            @include media(768px) {
+                                justify-content: center;
+                            }
+
+                            h3 {
+                                font-size: 1.5em;
+                            }
+
+                            span {
+                                color: #656B72;
+                                font-size: 1em;
+
+                            }
+                        }
+
+                        .wrapper {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                            border: 1px solid #25292C;
+                            background-color: #1C1F22;
+
+
+
+                            @include media(768px) {
+                                display: none;
+                            }
+
+                            img {
+                                max-height: 50px;
+
+                                @include media(1100px) {
+                                    max-height: 40px;
+                                }
+                            }
+
+                            p {
+                                margin: 0;
+                                color: #656b72;
+                                font-size: 0.7rem;
+                            }
+                        }
+
+                    }
+                }
+
+                .common-cls:nth-child(2) {
+
+                    background-image: url('./8PackDetailImg/Clip.png');
+                    background-size: cover;
+                    background-position: center center;
+                    display: flex;
+                    flex-direction: column;
+
+                    .items {
+                        img {
+                            margin: auto;
+                        }
+                    }
+
+                    @include media(768px) {
+                        align-items: center;
+                    }
+
+                    img {
+                        @include media(868px) {
+                            min-height: 250px;
+                        }
+
+                        @include media(768px) {
+                            max-height: 300px;
+                        }
+                    }
+
+                    @include media(768px) {
+                        order: -1;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .common-cls:last-child {
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+
+                    @include media(1200px) {
+                        font-size: 14px;
+
+                    }
+
+
+                    section {
+                        display: flex;
+                        flex-direction: column;
+
+                        h5 {
+                            font-size: 1.2em;
+                            color: white;
+                        }
+
+                        p {
+                            font-size: 0.7em;
+                            color: #656B72;
+                        }
+
+                        .wrapper {
+                            @include media(768px) {
+                                order: -1;
+                            }
+
+                            @media (min-width:768px) and (max-width:1200px) {
+                                width: 200px;
+                            }
+
+                            display: flex;
+                            gap: 5px;
+
+
+                            .div1 {
+                                flex: 4;
+
+                                @include media(768px) {
+                                    display: flex;
+                                    justify-content: center;
+                                }
+
+                                button:first-child {
+                                    background-color: #1C1F22;
+                                    border: 1px solid #25292C;
+
+                                    @include media(768px) {
+                                        display: none;
+                                    }
+                                }
+
+                                button:last-child {
+                                    background: linear-gradient(180deg, #B0964C 0%, #E9E1A8 50.52%, #B0964C 100%);
+
+                                    border: 1px solid #25292C;
+
+                                    @include media(768px) {
+                                        width: 35vw;
+                                    }
+
+                                    margin-bottom: 40px;
+                                }
+                            }
+
+                            .div2 {
+                                flex: 1;
+
+                                @include media(768px) {
+                                    display: none;
+                                }
+
+                                img {
+                                    background-color: #1C1F22;
+                                    border: 1px solid #25292C;
+                                    object-fit: none;
+                                    margin: 0px auto;
+                                    height: 35px;
+                                    width: 35px;
+                                }
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

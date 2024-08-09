@@ -1,0 +1,22 @@
+@import 'media';
+
+#backOption {
+    padding-top: 30px;
+
+    .container-fluid {
+        .row {
+            .col {
+                display: flex;
+
+                h5 {
+                    @include media(768px) {
+                     width:100%;
+                     text-align: center;
+                     margin-left: -30px;
+                    }
+                }
+
+            }
+        }
+    }
+}
